@@ -463,6 +463,10 @@ section:not(:first-child) {
         font-size: 1.3rem;
         font-weight: 600;
     }
+    #home .home-hero .home-hero-left .home-hero-left-content h1 {
+        font-size: 3rem !important;
+        width: 100% !important;
+    }
     
 }
 
@@ -479,7 +483,7 @@ section:not(:first-child) {
     #home .aside-content .header-bars-mobile {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 1rem;  
         color: var(--white-color);
         font-size: 1.3rem;
         font-weight: 600;
@@ -487,15 +491,14 @@ section:not(:first-child) {
         outline: none;
         background-color: transparent;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .header-content-filter {
-        display: none !important;
+    #home .home-hero .home-hero-left .home-hero-left-content h1 {
+        font-size: 1.8rem !important;
+        width: 100% !important;
     }
-
+    #home .home-hero .home-hero-left .home-hero-left-content div{
+        margin-top: 1rem !important;
+    }
 }
-
 
 @media screen and (max-width: 576px) {
     .container {
@@ -505,17 +508,12 @@ section:not(:first-child) {
 
     .home-hero {
         flex-direction: column;
-        justify-content: center !important;
+        justify-content: space-evenly !important;
     }
 
     #home .home-hero .home-hero-left .home-hero-left-content {
         width: 100%;
         margin: 0;
-    }
-
-    #home .home-hero .home-hero-left .home-hero-left-content h1 {
-        font-size: 2rem !important;
-        width: 100% !important;
     }
     #home .home-btns {
         font-size: 0.7rem;
@@ -527,7 +525,7 @@ section:not(:first-child) {
     #home .home-btns .home-btns-btn{
         gap: 2px !important;
     }
-    #home .home-btns button img{
+    #home .home-btns button > img{
         width: 80%;
     }
     #home .home-btns button span{
