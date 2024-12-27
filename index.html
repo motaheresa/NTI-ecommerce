@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font family  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- home start -->
+    <section id="home">
+        <!-- header start -->
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-content-logo">
+                        <a href="#">OneTech</a>
+                    </div>
+                    <div class="header-content-filter">
+                        <input type="search" placeholder="Search For Products..."><!-- 
+                -->
+                        <div class="select-wrapper"><select title="category" name="category" id="category-select">
+                                <option value="All Categories">All Categories</option>
+                                <option value="Computers">Computers</option>
+                                <option value="Laptops">Laptops</option>
+                                <option value="Camerars">Camerars</option>
+                                <option value="Hardware">Hardware</option>
+                                <option value="Smartphones">Smartphones</option>
+                            </select>
+                        </div><!-- 
+                    --><a href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                    <div class="home-btns">
+                        <div class="home-btns-btn home-btns-wishlist">
+                            <button type="button" class="btn  position-relative">
+                                <img src="imgs/wishlist.webp" alt="Wishlist">
+                                <span class="position-absolute translate-middle badge rounded-pill">
+                                    0 </span>
+                            </button>
+                            <a href="#">witchlist</a>
+                        </div>
+                        <div class="home-btns-btn home-btns-wishlist">
+                            <button type="button" class="btn  position-relative">
+                                <img src="imgs/cart.webp" alt="Cart">
+                                <span class="position-absolute translate-middle badge rounded-pill">
+                                    0 </span>
+                            </button>
+                            <div class="cart-wrapper">
+                                <a href="#">Cart</a>
+                                <span>$ 0</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+
+        <!-- aside start -->
+        <aside>
+            <div class="container">
+                <div class="aside-content">
+                    <div class="categories-menu">
+                        <i class="fa-solid fa-list-ul"></i>
+                        CATEGORIES
+                        <ul class="dropdown">
+                            <li>
+                                <a href="">Computers & Laptops</a>
+                            </li>
+                            <li>
+                                <a href="">Cameras & Photos</a>
+                            </li>
+                            <li>
+                                <a href="">Hardware</a>
+                            </li>
+                            <li>
+                                <a href="">Smartphones & Tablets</a>
+                            </li>
+                            <li>
+                                <a href="">TV & Audio</a>
+                            </li>
+                            <li>
+                                <a href="">Gadgets</a>
+                            </li>
+                            <li>
+                                <a href="">Car Electronics</a>
+                            </li>
+                            <li>
+                                <a href="">Video Games & Consoles</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="Home" class="">Home</a>
+                        </li>
+                        <li>
+                            <a href="Home">Super Deals</a>
+                        </li>
+                        <li>
+                            <a href="Home">New Arrival</a>
+                        </li>
+                        <li>
+                            <a href="Home">Trends</a>
+                        </li>
+                        <li class="pagesItem">
+                            <a href="pages">Pages</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="">Product</a>
+                                </li>
+                                <li>
+                                    <a href="">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="">Cart</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Home">Blog</a>
+                        </li>
+                        <li>
+                            <a href="Home">Contact</a>
+                        </li>
+
+                    </ul>
+                    <button class="header-bars-mobile">
+                        <span>MENU</span>
+                        <span><i class="fa-solid fa-bars"></i></span>
+                    </button>
+                    <div class="header-menu-mobile">
+                        <input type="search" placeholder="Search For Products...">
+                        <ul>
+                            <li>
+                                <a href="Home">Home</a>
+                            </li>
+                            <li>
+                                <a href="Home">Super Deals</a>
+                            </li>
+                            <li>
+                                <a href="Home">New Arrival</a>
+                            </li>
+                            <li>
+                                <a href="Home">Trends</a>
+                            </li>
+                            <li class="pagesItem">
+                                <span>Pages <i class="fa-solid fa-caret-down"></i></span>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a href="#">Shop</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Product</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+    
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="Home">Blog</a>
+                            </li>
+                            <li>
+                                <a href="Home">Contact</a>
+                            </li>
+    
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </aside>
+        <!-- aside end -->
+
+        <!--  hero start -->
+        <div class="home-hero">
+            <div class="home-hero-left">
+                <div class="container">
+                    <div class="home-hero-left-content">
+                        <h1>NEW ERA OF SMARTPHONES</h1>
+                        <div>
+                            <del>$530</del>
+                            <span>$460</span>
+                        </div>
+                        <span>Apple Iphone 6s</span>
+                        <button class="btn">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="home-hero-right">
+                <img src="/imgs/hero_phone-img.webp" alt="">
+            </div>
+        </div>
+        <!--  hero end -->
+
+    </section>
+
+    <!-- home end -->
+
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- js file -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
