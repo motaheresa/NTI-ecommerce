@@ -9,4 +9,19 @@ document.addEventListener("DOMContentLoaded", () => {
   bars.addEventListener("click", () => {
     heaedr_menu.classList.toggle("active")
   });
+
+  // Super Deals
+  const activeSections=document.querySelectorAll("#super-deals .super-deals-slider-and-products .super-deals-products .super-deals-products-filter span")
+  activeSections.forEach(section=>{
+    section.addEventListener("click",()=>{
+      activeSections.forEach(activeSection=>{
+        if(activeSection.className.includes("active")){
+          activeSection.classList.remove("active")
+        }
+        section.classList.add("active")
+      })
+    })
+  })
 });
+
+

@@ -13,7 +13,10 @@
     --black-color: #000;
     --border-color: #d2d2d2;
     --gray-color: #9f9f9f;
+    --gray-color-2: #828282;
     --shadow: 0 0 .4rem #0000002e;
+    --big-shadow: 0 0 1rem #6d6d6d2e;
+    --card-shadow: 0 0 4rem #3535352e;
 }
 
 
@@ -42,7 +45,7 @@ li {
 }
 
 section:not(:first-child) {
-    padding: 1.5rem 0;
+    padding: 3rem 0;
 }
 
 /* home start */
@@ -226,7 +229,7 @@ section:not(:first-child) {
     transition: 0.3s ease-in-out;
 }
 
-#home aside .aside-content .header-menu-mobile.active{
+#home aside .aside-content .header-menu-mobile.active {
     transform: scaleY(1);
 }
 
@@ -438,13 +441,14 @@ section:not(:first-child) {
 
 #home .home-hero .home-hero-right img {
     width: 90%;
+
 }
 
 #home .aside-content .header-bars-mobile {
-    
+
     display: flex;
     align-items: center;
-    gap: 1rem;  
+    gap: 1rem;
     color: var(--white-color);
     font-size: 1.3rem;
     font-weight: 600;
@@ -472,11 +476,12 @@ section:not(:first-child) {
     #home .aside-content .header-bars-mobile {
         display: flex;
     }
+
     #home .home-hero .home-hero-left .home-hero-left-content h1 {
         font-size: 3rem !important;
         width: 100% !important;
     }
-    
+
 }
 
 
@@ -493,9 +498,11 @@ section:not(:first-child) {
         font-size: 1.8rem !important;
         width: 100% !important;
     }
-    #home .home-hero .home-hero-left .home-hero-left-content div{
+
+    #home .home-hero .home-hero-left .home-hero-left-content div {
         margin-top: 1rem !important;
     }
+
     #home .aside-content .header-bars-mobile {
         display: flex;
     }
@@ -506,9 +513,11 @@ section:not(:first-child) {
         width: 96% !important;
         padding: 0 !important;
     }
+
     #home .aside-content .header-bars-mobile {
         display: flex;
     }
+
     .home-hero {
         flex-direction: column;
         justify-content: space-evenly !important;
@@ -518,7 +527,8 @@ section:not(:first-child) {
         width: 100%;
         margin: 0;
     }
-    #home .home-btns .home-btns-btn{
+
+    #home .home-btns .home-btns-btn {
         gap: 2px !important;
     }
 
@@ -529,9 +539,11 @@ section:not(:first-child) {
         width: 96% !important;
         padding: 0 !important;
     }
+
     #home .aside-content .header-bars-mobile {
         display: flex;
     }
+
     .home-hero {
         flex-direction: column;
         justify-content: space-evenly !important;
@@ -541,21 +553,26 @@ section:not(:first-child) {
         width: 100%;
         margin: 0;
     }
+
     #home .home-btns {
         font-size: 0.7rem;
         gap: 0;
     }
+
     #home .home-btns .home-btns-btn a {
         display: none;
     }
-    #home .header-content-logo a{
+
+    #home .header-content-logo a {
         font-size: 1.3em;
         padding: 0;
     }
-    #home .home-btns button > img{
+
+    #home .home-btns button>img {
         width: 80%;
     }
-    #home .home-btns button span{
+
+    #home .home-btns button span {
         width: 1rem;
         height: 1rem;
         display: flex;
@@ -565,3 +582,376 @@ section:not(:first-child) {
 }
 
 /* home media query end */
+
+
+/* super-deals-items start */
+
+#super-deals .super-deals-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+#super-deals .super-deals-items .super-deals-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: var(--shadow);
+    width: 100%;
+    padding: 0.7rem 1rem;
+}
+
+#super-deals .super-deals-items .super-deals-item small {
+    display: block;
+    color: var(--gray-color);
+}
+
+#super-deals .super-deals-slider-and-products {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 2rem 0;
+}
+
+#super-deals .super-deals-slider-and-products .super-deals-slider {
+    box-shadow: var(--big-shadow);
+    padding: 1rem;
+}
+
+#super-deals .super-deals-slider-and-products .super-deals-slider .carousel-item-img-wrapper {
+    width: 90%;
+    margin: 2.5rem auto;
+}
+
+#super-deals .super-deals-slider-and-products .super-deals-slider .carousel-item>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#super-deals .super-deals-slider-and-products .super-deals-slider .carousel-item-info-wrapper-1,
+#super-deals .super-deals-slider-and-products .super-deals-slider .carousel-item-info-wrapper-3 {
+    color: var(--gray-color-2);
+}
+
+#super-deals .super-deals-slider-and-products .super-deals-slider .carousel-item-info-wrapper-2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#super-deals .super-deals-slider-and-products .super-deals-slider progress {
+    width: 100%;
+    padding: 0.7rem 0;
+}
+
+#super-deals .super-deals-slider-and-products .super-deals-slider .carousel-item-info-wrapper-last {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#super-deals .super-deals-slider-and-products .super-deals-slider .carousel-item-info-wrapper-last div span:last-child {
+    display: block;
+    color: var(--gray-color-2);
+}
+
+#super-deals .super-deals-slider-and-products .super-deals-slider .carousel-item-info-wrapper-2 span:nth-child(2) {
+    color: var(--secondary-color);
+}
+
+#super-deals .super-deals-slider-and-products .super-deals-slider .super-deals-slider-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#super-deals .super-deals-slider-and-products .super-deals-slider .super-deals-slider-header .super-deals-slider-header-arrows {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--gray-color);
+    font-size: 1rem;
+}
+
+#super-deals .super-deals-slider-and-products .super-deals-products {
+    padding: 10px 0;
+}
+
+#super-deals .super-deals-slider-and-products .super-deals-products .super-deals-products-filter {
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+    margin-left: 1.5rem;
+    color: var(--gray-color-2);
+    font-size: 1.1rem;
+    font-weight: 500;
+
+}
+
+#super-deals .super-deals-slider-and-products .super-deals-products .super-deals-products-filter span {
+    padding: 0 10px;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#super-deals .super-deals-slider-and-products .super-deals-products .super-deals-products-filter span.active {
+    color: var(--black-color);
+    border-bottom: 2px solid var(--main-color);
+    font-weight: 700;
+}
+
+#super-deals .super-deals-slider-and-products .super-deals-products .super-deals-products-filter span:hover {
+    color: var(--black-color);
+}
+
+#super-deals .super-deals-slider-and-products .super-deals-products .super-deals-products-filter-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 0;
+    gap: 4rem 0;
+    margin-left: 1.5rem;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: box-shadow 0.2s ease-in-out;
+    padding-top: 1rem;
+}
+
+.card-item:hover {
+    box-shadow: var(--card-shadow);
+}
+
+.card-item .offer {
+    position: absolute;
+    left: 0.6rem;
+    top: 0.6rem;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border-radius: 50% 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.card-item .new {
+    position: absolute;
+    left: 0.6rem;
+    top: 0.6rem;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-radius: 50% 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.card-item:not(:last-child) {
+    border-right: 1px solid var(--border-color);
+}
+
+.card-item img {
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+.card-item small {
+    color: var(--gray-color-2);
+}
+
+.card-item .card-add-cart-btn {
+    width: 100%;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    font-weight: 500;
+    padding: 0.4rem 0;
+    border: none;
+    border-radius: 0.3rem 0.3rem 0 0;
+    margin-top: 0.4rem;
+    visibility: hidden;
+
+}
+
+.card-item:hover .card-add-cart-btn {
+    visibility: visible;
+}
+
+.card-item .card-add-cart-btn:hover {
+    opacity: 0.6;
+}
+
+.super-deals-categories {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 2rem 0;
+}
+
+.super-deals-categories .super-deals-categories-left {
+    width: 100%;
+}
+
+.super-deals-categories .super-deals-categories-left button {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    font-weight: 500;
+    padding: 0.5rem 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.super-deals-categories .super-deals-categories-left button:hover {
+    opacity: 0.7;
+}
+
+.super-deals-categories img {
+    width: fit-content;
+}
+
+.super-deals-categories .super-deals-categories-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.super-deals-categories .super-deals-categories-right-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.super-deals-categories .super-deals-categories-right-item span {
+    color: var(--gray-color-2);
+}
+
+/* super deals responsive starts */
+
+@media screen and (max-width: 1080px) {
+    #super-deals .super-deals-items {
+        flex-direction: column;
+
+    }
+
+    #super-deals .super-deals-items .super-deals-item {
+        justify-content: start;
+    }
+
+    #super-deals .super-deals-slider-and-products  {
+        grid-template-columns: 1fr;
+       
+    }
+
+    #super-deals .super-deals-slider-and-products .super-deals-products{
+        margin: 2rem 0 ;
+    }
+
+    .super-deals-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .super-deals-categories .super-deals-categories-right {
+        margin-top: 2rem;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 772px) {
+    #super-deals .super-deals-slider-and-products .super-deals-products .super-deals-products-filter-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #super-deals .super-deals-slider-and-products .super-deals-products .super-deals-products-filter-items {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #super-deals .super-deals-slider-and-products .super-deals-products .super-deals-products-filter{
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+}
+
+
+/* super deals responsive ends */
+/* super-deals-items end */
+
+
+/* laptops-slider starts */
+
+#laptops-slider{
+    display: flex;
+    background-image: url(/imgs/bg-gradient.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#laptops-slider .laptops-slider-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#laptops-slider .laptops-slider-container p{
+    width: 80%;
+}
+
+#laptops-slider .laptops-slider-container small,
+#laptops-slider .laptops-slider-container p{
+    color: var(--gray-color-2);
+}
+
+#laptops-slider .laptops-slider-container h3{
+    font-size: 2rem;
+    margin: 1rem 0 0.4rem 0;
+}
+
+#laptops-slider .laptops-slider-container button{
+    margin-top: 2rem;
+    width: 8rem;
+}
+
+#laptops-slider .laptops-slider-container .laptops-slider-content-wrapper .laptops-slider-content-wrapper-stars{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+#laptops-slider .laptops-slider-container .laptops-slider-content-wrapper .laptops-slider-content-wrapper-stars i{
+    color: rgb(255, 221, 0);
+}
+
+/* laptops-slider ends */
+/* laptops-slider responsive starts */
+
+@media screen and (max-width:800px) {
+    #laptops-slider .laptops-slider-container{
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+/* laptops-slider responsive ends */
